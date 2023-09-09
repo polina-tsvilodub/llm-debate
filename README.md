@@ -4,6 +4,8 @@ This repository offers a minimal boilerplate code for participating in the IICCS
 
 ## Code
 
+The instructions below are for local execution. If you wish to run the code on [Google Colab](https://colab.google/), see the specific instructions afterwards.
+
 ### Installation
 To get started, first, clone the repository: 
 ```
@@ -16,8 +18,25 @@ If you develop locally, we strongly recommend to create a virtual environment be
 pip install -r requirements.txt
 ```
 
-However, instead of developing locally, you can also run the code on [Google Colab](https://colab.google/). Execute the same steps described above to get started on Colab.
-langchain (older version). 
+#### Colab
+However, instead of developing locally, you can also run the code on [Google Colab](https://colab.google/). Execute the following steps to run the starter code on Colab:
+```
+!git clone https://github.com/polina-tsvilodub/llm-debate.git
+```
+
+```
+%cd llm-debate
+```
+Install the requirements by running: 
+```
+!pip install -r requirements.txt
+```
+**NOTE**: in order to run the code with API calls to models, you will need to specify your API keys in the environment (see below for details). Please note that these keys are **SENSITIVE INFORMATION**. Therefore, you shouldn't upload these to public repositories or Google drives. To set keys in your Colab environment, you can either upload an .env file or set the respective key by e.g. running:
+```
+import os
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = <YOUR_KEY>
+```
+Please note that both solutions only persist the key for the duration of the Colab session.
 
 ### Running the starter code
 
