@@ -38,6 +38,11 @@ os.environ["HUGGINGFACEHUB_API_TOKEN"] = <YOUR_KEY>
 ```
 Please note that both solutions only persist the key for the duration of the Colab session.
 
+To run the starter entrypoint, execute:
+```
+!python debate.py
+```
+
 ### Running the starter code
 
 To run the current version of the code, execute `python debate.py`. You can optionally pass various configurations, which you can inspect by executing `python debate.py --help`. 
