@@ -53,7 +53,7 @@ There are two files in the repository:
   * LLMs supported by this code are OpenAI models and models available through the Huggingface Hub. For full information about models available through the Huggingface Hub, see [here](https://huggingface.co/docs/api-inference/quicktour). For getting started, the following models might be good candidates (model names that can be passed to initialize the debate are listed): 
     * OpenAI: gpt-3.5-turbo
     * Huggigface Hub: google/flan-t5-xxl, facebook/opt-1.3b 
-    * To use OpenAI models, you need to add a .env file to the directory in which you have this code. Make sure to NOT push your .env file to publich GitHub repositories. The env file should contain the variable "OPENAI_API_KEY" with the respective key. The same file should contain "HUGGINGFACEHUB_API_TOKEN" with the respective key for accessing the Huggingface Hub models.
+    * To use OpenAI models, you need to add a .env file to the directory in which you have this code. Make sure to NOT push your .env file to public GitHub repositories. The env file should contain the variable "OPENAI_API_KEY" with the respective key. The same file should contain "HUGGINGFACEHUB_API_TOKEN" with the respective key for accessing the Huggingface Hub models.
 
 ## Additional materials 
 

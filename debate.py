@@ -77,12 +77,10 @@ class BotDebate():
             sentenceA = self.modelA.predict(
                 text=self.conversation_history + seed_personaA + init_prompt, 
             )
-            print("sentence A: ", sentenceA)
             # reply by second agent
             sentenceB = self.modelB.predict(
                 text=self.conversation_history + sentenceA + seed_personaB + init_prompt, 
             )
-            print("sentence B ",sentenceB)
             # update conversation history
             self.conversation_history = self.conversation_history + sentenceA + sentenceB
             # update nicely formatted conversation history
@@ -144,8 +142,4 @@ if __name__ == "__main__":
         n_turns=args.n_turns,
     )
 
-    print("End of conversation: \n\n", pretty_conversation) 
-    print("raw history : \n\n", raw_conversation)
-
-
-
+    print("Full conversation: \n\n", pretty_conversation) 

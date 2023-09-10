@@ -52,7 +52,6 @@ def init_model(model_name, **kwargs):
         )
     elif "/" in model_name:
         load_dotenv()
-        print(os.getenv("HUGGINGFACEHUB_API_TOKEN"))
         try:
             load_dotenv()
             assert os.environ["HUGGINGFACEHUB_API_TOKEN"] != "" 
